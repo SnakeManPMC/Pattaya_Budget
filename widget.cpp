@@ -23,6 +23,9 @@ void Widget::on_update_Button_clicked()
 	// BAHT sum
 	ui->sum_baht_Label->setText(QString::number((ui->days->value() * (ui->hotel->value() + ui->food->value() + ui->taxi->value() + ui->bars->value() + ui->nartut->value())) + (ui->airlineTicket->value() * ui->exchange->value())));
 
+	int months = eurobudget - ui->currentFunds->value();
+	months = months / ui->monthlySavings->value();
+
 	// monthly savings
-	ui->sum_months_label->setText(QString::number(eurobudget / ui->monthlySavings->value()));
+	ui->sum_months_label->setText(QString::number(months));
 }

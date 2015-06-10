@@ -42,7 +42,7 @@
     <number>90</number>
    </property>
   </widget>
-  <widget class="QLabel" name="nartut_Label">
+  <widget class="QLabel" name="ladys_Label">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -52,10 +52,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Nartut</string>
+    <string>Ladys</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="nartut">
+  <widget class="QSpinBox" name="ladys">
    <property name="geometry">
     <rect>
      <x>20</x>

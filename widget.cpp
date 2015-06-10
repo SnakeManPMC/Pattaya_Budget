@@ -15,13 +15,13 @@ Widget::~Widget()
 
 void Widget::on_update_Button_clicked()
 {
-	int eurobudget = (ui->days->value() * (ui->hotel->value() + ui->food->value() + ui->taxi->value() + ui->bars->value() + ui->nartut->value()) / ui->exchange->value() + ui->airlineTicket->value() );
+	int eurobudget = (ui->days->value() * (ui->hotel->value() + ui->food->value() + ui->taxi->value() + ui->bars->value() + ui->ladys->value()) / ui->exchange->value() + ui->airlineTicket->value() );
 
 	// EURO sum
 	ui->sum_euro_Label->setText(QString::number(eurobudget));
 
 	// BAHT sum
-	ui->sum_baht_Label->setText(QString::number((ui->days->value() * (ui->hotel->value() + ui->food->value() + ui->taxi->value() + ui->bars->value() + ui->nartut->value())) + (ui->airlineTicket->value() * ui->exchange->value())));
+	ui->sum_baht_Label->setText(QString::number((ui->days->value() * (ui->hotel->value() + ui->food->value() + ui->taxi->value() + ui->bars->value() + ui->ladys->value())) + (ui->airlineTicket->value() * ui->exchange->value())));
 
 	int months = eurobudget - ui->currentFunds->value();
 	months = months / ui->monthlySavings->value();
